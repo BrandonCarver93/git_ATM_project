@@ -15,18 +15,22 @@ accessATM();
 //TODO: Call accessATM function
 
 function mainMenu() {
-   let userInput = prompt("What would you like to do? \n1.View Balance \n2.Deposit Now \n3.Withdraw now \n4.Quit \n5.Restart")
+   let userInput = prompt("What would you like to do? \n1.View Balance \n2.Deposit Now \n3.Withdraw now \n4.Exit \n5.Restart")
   switch(userInput) {
     case "1":
       aBalance()
+      mainMenu()
       break;
     case "2":
       aDeposit()
+      mainMenu()
       break;
     case "3":
       aWithdrawl()
+      mainMenu()
       break;
     case "4":
+      console.log("GoodBye!")
       break;
     case "5":
       mainMenu();
@@ -34,7 +38,7 @@ function mainMenu() {
         return
       }
   }
-  mainMenu()
+  mainMenu();
   //TODO: Set up a main menu.  Prompt users for ATM selection to do the following:
   //! Remember - we should keep prompting the user for options until they quit!
   //Get current balance

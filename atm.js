@@ -6,7 +6,7 @@ const prompt = require("prompt-sync")();
 
 function getBalance() {
   console.log(accBal);
-  return accBal
+ return accBal;
  
 }
   //TODO: Return the customer's acct. balance
