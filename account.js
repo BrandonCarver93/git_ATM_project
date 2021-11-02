@@ -4,4 +4,14 @@
 
 //TODO: Create variables for account balance & account pin
 
+
+const balance = 897;
+const pin = 1941
+
+module.exports = {
+    accBal: balance,
+    myPin: pin,
+};
+
+
 //Export these variables
