@@ -40,6 +40,7 @@ function validatePin(enteredPin) {
    userPin = parseInt(prompt("Please Input Pin"));
     if (userPin === corrPin){
       console.log('Confirmed');
+      mainMenu()
     } else {
       console.log("Please input pin again.");
     }

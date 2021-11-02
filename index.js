@@ -9,10 +9,8 @@ const prompt = require("prompt-sync")();
 
 function accessATM() {
   aPin();
-
 }
-mainMenu();
-   
+accessATM();
  
 //TODO: Call accessATM function
 
@@ -28,10 +26,13 @@ function mainMenu() {
     case "3":
       aWithdrawl()
       break;
+    case "4":
+      break;
       default:
-        return mainMenu;
+        return mainMenu();
       }
   }
+  mainMenu()
   //TODO: Set up a main menu.  Prompt users for ATM selection to do the following:
   //! Remember - we should keep prompting the user for options until they quit!
   //Get current balance
