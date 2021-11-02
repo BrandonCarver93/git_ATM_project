@@ -15,7 +15,7 @@ function getBalance() {
 
 function withdraw(withdrawAmount) {
  let withdrawAmt = parseInt(prompt("How much do you want to withdraw?"));
- let withdrawBal = "Available Balance" + parseInt(getBalance() - withdrawAmt);
+ let withdrawBal = "Available Balance" + " " + parseInt(accBal - withdrawAmt);
  console.log(withdrawBal);
   }
   
@@ -25,7 +25,7 @@ function withdraw(withdrawAmount) {
 
 function deposit(depositAmount) {
   let depositAmt = parseInt(prompt("How much do you want to deposit?"));
-  let depositBal = "Available Balance" + parseInt(getBalance() + depositAmt);
+  let depositBal = "Available Balance" + " " + parseInt(accBal + depositAmt);
   console.log(depositBal);
 }
   //TODO: deposit amount to current acct. balance
@@ -40,7 +40,6 @@ function validatePin(enteredPin) {
    userPin = parseInt(prompt("Please Input Pin"));
     if (userPin === corrPin){
       console.log('Confirmed');
-      mainMenu()
     } else {
       console.log("Please input pin again.");
     }

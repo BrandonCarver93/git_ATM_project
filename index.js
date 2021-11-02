@@ -15,7 +15,7 @@ accessATM();
 //TODO: Call accessATM function
 
 function mainMenu() {
-   let userInput = prompt("What would you like to do? \n1.View Balance \n2.Deposit Now \n3.Withdraw now \n4.Quit")
+   let userInput = prompt("What would you like to do? \n1.View Balance \n2.Deposit Now \n3.Withdraw now \n4.Quit \n5.Restart")
   switch(userInput) {
     case "1":
       aBalance()
@@ -28,8 +28,10 @@ function mainMenu() {
       break;
     case "4":
       break;
+    case "5":
+      mainMenu();
       default:
-        return mainMenu();
+        return
       }
   }
   mainMenu()
